@@ -5,5 +5,8 @@
   "main": "server.js",
   "repository": "infinity-co/infinity-service",
   "author": "Bu Kinoshita <bukinoshita@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "mongoose": "^5.4.14"
+  }
 }
