@@ -1,0 +1,9 @@
+{
+  "name": "infinity-service",
+  "version": "0.0.0",
+  "description": "Infinity service",
+  "main": "server.js",
+  "repository": "infinity-co/infinity-service",
+  "author": "Bu Kinoshita <bukinoshita@gmail.com>",
+  "license": "MIT"
+}
