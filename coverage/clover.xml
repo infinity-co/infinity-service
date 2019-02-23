@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1550949715156" clover="3.2.0">
+  <project timestamp="1550949715164" name="All files">
+    <metrics statements="57" coveredstatements="54" conditionals="6" coveredconditionals="3" methods="9" coveredmethods="6" elements="72" coveredelements="63" complexity="0" loc="57" ncloc="57" packages="8" files="8" classes="8"/>
+    <package name="infinity-service">
+      <metrics statements="28" coveredstatements="28" conditionals="4" coveredconditionals="2" methods="1" coveredmethods="1"/>
+      <file name="server.js" path="/Users/bukinoshita/github/infinity/infinity-service/server.js">
+        <metrics statements="28" coveredstatements="28" conditionals="4" coveredconditionals="2" methods="1" coveredmethods="1"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="9" count="1" type="stmt"/>
+        <line num="12" count="1" type="stmt"/>
+        <line num="15" count="1" type="stmt"/>
+        <line num="16" count="1" type="stmt"/>
+        <line num="18" count="1" type="stmt"/>
+        <line num="20" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="21" count="1" type="stmt"/>
+        <line num="23" count="1" type="stmt"/>
+        <line num="25" count="1" type="stmt"/>
+        <line num="27" count="1" type="stmt"/>
+        <line num="28" count="1" type="stmt"/>
+        <line num="29" count="1" type="stmt"/>
+        <line num="30" count="1" type="stmt"/>
+        <line num="31" count="1" type="stmt"/>
+        <line num="32" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="33" count="1" type="stmt"/>
+        <line num="34" count="1" type="stmt"/>
+        <line num="36" count="1" type="stmt"/>
+        <line num="38" count="1" type="stmt"/>
+        <line num="39" count="1" type="stmt"/>
+        <line num="44" count="1" type="stmt"/>
+        <line num="47" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="infinity-service.config">
+      <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <file name="index.js" path="/Users/bukinoshita/github/infinity/infinity-service/config/index.js">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="infinity-service.controllers.health">
+      <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <file name="index.js" path="/Users/bukinoshita/github/infinity/infinity-service/controllers/health/index.js">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="infinity-service.controllers.health.get">
+      <metrics statements="6" coveredstatements="5" conditionals="2" coveredconditionals="1" methods="1" coveredmethods="1"/>
+      <file name="index.js" path="/Users/bukinoshita/github/infinity/infinity-service/controllers/health/get/index.js">
+        <metrics statements="6" coveredstatements="5" conditionals="2" coveredconditionals="1" methods="1" coveredmethods="1"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="6" count="0" type="stmt"/>
+        <line num="9" count="1" type="stmt"/>
+        <line num="19" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="infinity-service.controllers.health.get.is-database-connected">
+      <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <file name="index.js" path="/Users/bukinoshita/github/infinity/infinity-service/controllers/health/get/is-database-connected/index.js">
+        <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="2" count="2" type="stmt"/>
+        <line num="4" count="2" type="stmt"/>
+        <line num="6" count="2" type="stmt"/>
+      </file>
+    </package>
+    <package name="infinity-service.helpers.connect-database">
+      <metrics statements="8" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="1"/>
+      <file name="index.js" path="/Users/bukinoshita/github/infinity/infinity-service/helpers/connect-database/index.js">
+        <metrics statements="8" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="1"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="8" count="2" type="stmt"/>
+        <line num="12" count="2" type="stmt"/>
+        <line num="13" count="0" type="stmt"/>
+        <line num="17" count="2" type="stmt"/>
+        <line num="20" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="infinity-service.routes">
+      <metrics statements="6" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="1"/>
+      <file name="index.js" path="/Users/bukinoshita/github/infinity/infinity-service/routes/index.js">
+        <metrics statements="6" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="1"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="8" count="1" type="stmt"/>
+        <line num="9" count="0" type="stmt"/>
+        <line num="17" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="infinity-service.routes.health">
+      <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <file name="index.js" path="/Users/bukinoshita/github/infinity/infinity-service/routes/health/index.js">
+        <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="8" count="1" type="stmt"/>
+      </file>
+    </package>
+  </project>
+</coverage>
