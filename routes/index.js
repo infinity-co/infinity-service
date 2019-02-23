@@ -1,5 +1,5 @@
 // Package
-const { name, version, description } = require('./package')
+const { name, version, description } = require('../package')
 
 module.exports = app => {
   app.get('/', (req, res) => {
