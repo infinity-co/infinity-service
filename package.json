@@ -6,7 +6,19 @@
   "repository": "infinity-co/infinity-service",
   "author": "Bu Kinoshita <bukinoshita@gmail.com>",
   "license": "MIT",
+  "scripts": {
+    "start": "node server",
+    "dev": "nodemon server",
+    "test": "cross-env NODE_ENV=test mocha __tests__/**/*.js --timeout=16000  --exit",
+    "lint": "xo --quiet"
+  },
   "dependencies": {
-    "mongoose": "^5.4.14"
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.5",
+    "dotenv": "^6.2.0",
+    "express": "^4.16.4",
+    "express-validator": "^5.3.1",
+    "mongoose": "^5.4.14",
+    "morgan": "^1.9.1"
   }
 }
