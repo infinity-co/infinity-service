@@ -1,5 +1,6 @@
 // Packages
 const mongoose = require('mongoose')
+const Promise = require('bluebird')
 
 const schemaOptions = {
   timestamps: true
@@ -17,5 +18,7 @@ const userSchema = new mongoose.Schema(
 )
 
 const User = mongoose.model('User', userSchema)
+
+User.findOneAsync = Promise.promisify(User.findOne)
 
 module.exports = User
