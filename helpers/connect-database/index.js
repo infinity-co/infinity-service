@@ -2,7 +2,7 @@
 const mongoose = require('mongoose')
 
 // Config
-const config = require('../config')
+const config = require('../../config')
 
 const connectDatabase = () => {
   mongoose.connect(
