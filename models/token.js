@@ -1,5 +1,6 @@
 // Packages
 const mongoose = require('mongoose')
+const Promise = require('bluebird')
 
 const schemaOptions = { timestamps: true }
 
@@ -18,5 +19,7 @@ const tokenSchema = new mongoose.Schema(
 )
 
 const Token = mongoose.model('Token', tokenSchema)
+
+Token.findOneAndUpdateAsync = Promise.promisify(Token.findOneAndUpdate)
 
 module.exports = Token
