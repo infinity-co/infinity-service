@@ -7,6 +7,8 @@ const userRoute = app => {
     userController.validator.register,
     userController.register
   )
+
+  app.get('/user/confirm', userController.confirm)
 }
 
 module.exports = userRoute
