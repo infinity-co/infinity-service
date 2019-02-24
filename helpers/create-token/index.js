@@ -6,12 +6,12 @@ const createToken = (userId, token) => {
     if (userId && token) {
       const tkn = new TokenModel({ userId, token })
 
-      tkn.save(error => {
+      return tkn.save(error => {
         if (error) {
           return reject(error)
         }
 
-        resolve()
+        return resolve()
       })
     }
 
