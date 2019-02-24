@@ -11,7 +11,7 @@ const { host } = require('../../config')
 module.exports = async user => {
   if (user) {
     const confirmationToken = await generateConfirmationToken()
-    await createToken(user.id, confirmationToken)
+    await createToken(user._id, confirmationToken)
 
     const mailOptions = {
       to: user.email,
