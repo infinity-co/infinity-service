@@ -2,6 +2,7 @@
 const { name, version, description } = require('../package')
 
 // Routes
+const userRoute = require('./user')
 const healthRoute = require('./health')
 
 module.exports = app => {
@@ -14,5 +15,6 @@ module.exports = app => {
     })
   })
 
+  userRoute(app)
   healthRoute(app)
 }
