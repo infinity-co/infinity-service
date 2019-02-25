@@ -5,10 +5,7 @@ const mongoose = require('mongoose')
 const config = require('../../config')
 
 const connectDatabase = () => {
-  mongoose.connect(
-    config.database,
-    { useNewUrlParser: true }
-  )
+  mongoose.connect(config.database, { useNewUrlParser: true })
   mongoose.connection.on('error', () =>
     console.log(
       'MongoDB Connection Error. Please make sure that MongoDB is running.'

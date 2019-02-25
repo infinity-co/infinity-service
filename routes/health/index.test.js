@@ -1,12 +1,22 @@
 // Packages
+const assert = require('assert')
 const request = require('supertest')
 
 // Root
 const server = require('../../server')
 
-describe('Test the root path', () => {
-  test('It should response the GET method', async () => {
-    const response = await request(server).get('/health')
-    expect(response.statusCode).toBe(200)
+describe('Health check', () => {
+  it('should check if the database is up', done => {
+    request(server)
+      .get('/health')
+      .expect(200)
+      .end((err, res) => {
+        if (err) {
+          return console.error(err)
+        }
+
+        assert.strictEqual(res.body.data.status, 'up')
+        done()
+      })
   })
 })
