@@ -5,6 +5,7 @@ const sendVerifyAccountEmail = require('../../../helpers/send-verify-account-ema
 
 const register = async (req, res) => {
   const { email } = req.body
+
   let user = await findOneUser({ email })
 
   if (user) {
@@ -13,7 +14,7 @@ const register = async (req, res) => {
   }
 
   try {
-    user = await createUser({ email })
+    user = await createUser(email)
     await sendVerifyAccountEmail(user)
 
     res.status(200).send({ data: user })
