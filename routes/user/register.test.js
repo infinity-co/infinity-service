@@ -5,7 +5,7 @@ const request = require('supertest')
 // Root
 const server = require('../../server')
 
-describe('Register', () => {
+describe('Register user', () => {
   it('should register a user', done => {
     const payload = { email: 'bukinoshita@gmail.com' }
 
