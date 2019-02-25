@@ -3,14 +3,14 @@ const assert = require('assert')
 const request = require('supertest')
 
 // Root
-const server = require('../../server')
+const server = require('../../../server')
 
 // Helpers
-const generateConfirmationToken = require('../../helpers/generate-confirmation-token')
-const createToken = require('../../helpers/create-token')
+const generateConfirmationToken = require('../../../helpers/generate-confirmation-token')
+const createToken = require('../../../helpers/create-token')
 
 // Fixtures
-const addUser = require('../../fixtures/add-user')
+const addUser = require('../../../fixtures/add-user')
 
 describe('Confirm user', () => {
   let token
