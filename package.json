@@ -49,7 +49,10 @@
       "before",
       "test",
       "expect"
-    ]
+    ],
+    "rules": {
+      "no-async-promise-executor": 0
+    }
   },
   "lint-staged": {
     "*.js": [
