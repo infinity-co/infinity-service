@@ -9,6 +9,8 @@ const userRoute = app => {
   )
 
   app.get('/user/confirm', userController.confirm)
+
+  app.get('/user/verify', userController.verify)
 }
 
 module.exports = userRoute
