@@ -20,5 +20,6 @@ const userSchema = new mongoose.Schema(
 const User = mongoose.model('User', userSchema)
 
 User.findOneAsync = Promise.promisify(User.findOne)
+User.findByIdAsync = Promise.promisify(User.findById)
 
 module.exports = User
