@@ -10,6 +10,7 @@ const healthRoute = require('./health')
 
 module.exports = app => {
   app.use(middlewares.populateUser)
+  app.use(middlewares.sanitizer)
 
   app.get('/', (req, res) => {
     res.send({
