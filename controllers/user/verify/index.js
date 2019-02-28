@@ -11,7 +11,7 @@ const verify = async (req, res) => {
       { sort: { createdAt: -1 }, new: true }
     )
 
-    if (token && token.used && token.expired) {
+    if (token) {
       return res.status(200).send({ data: { status: true } })
     }
   }

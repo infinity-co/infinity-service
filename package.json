@@ -49,7 +49,8 @@
       "describe",
       "before",
       "test",
-      "expect"
+      "expect",
+      "beforeEach"
     ],
     "rules": {
       "no-async-promise-executor": 0

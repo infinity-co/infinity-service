@@ -8,12 +8,19 @@ const server = require('../../../server')
 // Helpers
 const generateConfirmationToken = require('../../../helpers/generate-confirmation-token')
 const createToken = require('../../../helpers/create-token')
+const resetDatabase = require('../../../helpers/reset-database')
 
 // Fixtures
 const addUser = require('../../../fixtures/add-user')
 const confirmUser = require('../../../fixtures/confirm-user')
 
 describe('Verify user', () => {
+  beforeEach(done => {
+    resetDatabase()
+      .then(done)
+      .catch(done)
+  })
+
   let user
 
   it('should verify a user', () => {

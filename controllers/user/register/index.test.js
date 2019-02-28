@@ -5,7 +5,16 @@ const request = require('supertest')
 // Root
 const server = require('../../../server')
 
+// Helpers
+const resetDatabase = require('../../../helpers/reset-database')
+
 describe('Register user', () => {
+  beforeEach(done => {
+    resetDatabase()
+      .then(done)
+      .catch(done)
+  })
+
   it('should register a user', done => {
     const payload = { email: 'bukinoshita@gmail.com' }
 
