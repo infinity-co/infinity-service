@@ -6,7 +6,7 @@ const isDatabaseConnencted = require('.')
 
 describe('is database connection', () => {
   it('should check if database is connected', done => {
-    assert.strictEqual(isDatabaseConnencted(), false)
+    assert.strictEqual(isDatabaseConnencted(), true)
     done()
   })
 })
