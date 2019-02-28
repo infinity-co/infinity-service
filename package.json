@@ -53,7 +53,8 @@
       "beforeEach"
     ],
     "rules": {
-      "no-async-promise-executor": 0
+      "no-async-promise-executor": 0,
+      "no-use-extend-native/no-use-extend-native": 0
     }
   },
   "lint-staged": {
