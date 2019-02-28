@@ -3,7 +3,7 @@ const assert = require('assert')
 const request = require('supertest')
 
 // Root
-const server = require('../../server')
+const server = require('../../../server')
 
 describe('Health check', () => {
   it('should check if the database is up', done => {
