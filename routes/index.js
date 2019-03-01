@@ -6,6 +6,7 @@ const middlewares = require('../middlewares')
 
 // Routes
 const userRoute = require('./user')
+const subscriptionsRoute = require('./subscriptions')
 const healthRoute = require('./health')
 
 module.exports = app => {
@@ -22,5 +23,6 @@ module.exports = app => {
   })
 
   userRoute(app)
+  subscriptionsRoute(app)
   healthRoute(app)
 }
