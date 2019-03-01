@@ -20,5 +20,6 @@ const subscriptionSchema = new mongoose.Schema(
 const Subscription = mongoose.model('Subscription', subscriptionSchema)
 
 Subscription.findOneAndUpdateAsync = Promise.promisify(Subscription.findOneAndUpdate)
+Subscription.removeAsync = Promise.promisify(Subscription.remove)
 
 module.exports = Subscription

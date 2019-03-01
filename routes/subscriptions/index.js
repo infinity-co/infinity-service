@@ -13,6 +13,8 @@ const subscriptionsRoute = app => {
   )
 
   app.put('/subscriptions/:id', middlewares.authenticated, subscriptionsController.edit)
+
+  app.delete('/subscriptions/:id', middlewares.authenticated, subscriptionsController.delete)
 }
 
 module.exports = subscriptionsRoute
