@@ -11,6 +11,8 @@ const subscriptionsRoute = app => {
     subscriptionsController.validator.create,
     subscriptionsController.create
   )
+
+  app.put('/subscriptions/:id', middlewares.authenticated, subscriptionsController.edit)
 }
 
 module.exports = subscriptionsRoute
