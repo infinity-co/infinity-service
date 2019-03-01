@@ -12,6 +12,8 @@ const subscriptionsRoute = app => {
     subscriptionsController.create
   )
 
+  app.get('/subscriptions/:id', middlewares.authenticated, subscriptionsController.get)
+
   app.put('/subscriptions/:id', middlewares.authenticated, subscriptionsController.edit)
 
   app.delete('/subscriptions/:id', middlewares.authenticated, subscriptionsController.delete)
