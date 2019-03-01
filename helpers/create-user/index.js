@@ -7,7 +7,7 @@ const generateToken = require('../generate-token')
 const createUser = email => {
   return new Promise((resolve, reject) => {
     const user = new UserModel({ email })
-    const token = generateToken(user.id)
+    const token = generateToken(user)
 
     user.token = token
 

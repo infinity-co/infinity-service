@@ -7,8 +7,8 @@ const pkg = require('../../package')
 // Config
 const { tokenSecret } = require('../../config')
 
-const generateToken = userId => {
-  if (userId) {
+const generateToken = user => {
+  if (user) {
     const now = new Date()
     const expire = new Date(now)
     expire.setDate(expire.getDate() + 15)
@@ -17,7 +17,7 @@ const generateToken = userId => {
 
     const payload = {
       iss: pkg.name,
-      sub: userId,
+      sub: user,
       iat,
       exp
     }
