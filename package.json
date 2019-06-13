@@ -30,7 +30,7 @@
     "cross-env": "5.2.0",
     "eslint-config-prettier": "4.3.0",
     "husky": "2.4.1",
-    "lint-staged": "8.2.0",
+    "lint-staged": "8.2.1",
     "mocha": "6.1.4",
     "nodemon": "1.19.1",
     "prettier": "1.18.2",
