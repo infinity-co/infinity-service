@@ -1,6 +1,0 @@
-exports.create = require('./create')
-exports.get = require('./get')
-exports.getAll = require('./get-all')
-exports.edit = require('./edit')
-exports.delete = require('./delete')
-exports.validator = require('./validator')
