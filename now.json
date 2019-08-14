@@ -4,5 +4,14 @@
   "version": 2,
   "scope": "bukinoshita",
   "builds": [{ "src": "dist/**/*.js", "use": "@now/node@canary" }],
-  "routes": [{ "src": "/", "dest": "/dist/api" }]
+  "routes": [{ "src": "/", "dest": "/dist/api" }],
+  "env": {
+    "DATABASE_USERNAME": "@infinity-service-database-username",
+    "DATABASE_PASSWORD": "@infinity-service-database-password",
+    "DATABASE_CLUSTER": "@infinity-service-database-cluster",
+    "DATABASE_OPTIONS": "@infinity-service-database-options"
+  },
+  "github": {
+    "enabled": false
+  }
 }
