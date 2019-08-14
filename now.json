@@ -1,18 +1,8 @@
 {
-  "name": "Infinity Service",
+  "name": "infinity-service",
   "alias": "infinity-service",
   "version": 2,
-  "builds": [{ "src": "server.js", "use": "@now/node-server" }],
-  "routes": [{ "src": "/(.*)", "dest": "server.js" }],
-  "env": {
-    "NODE_ENV": "@infinity-service-node-env-canary",
-    "PORT": "@infinity-service-port-canary",
-    "DATABASE": "@infinity-service-database-canary",
-    "TOKEN_SECRET": "@infinity-service-token-secret-canary",
-    "HOST": "@infinity-service-host-canary",
-    "MAILER_APIKEY": "@infinity-service-mailer-apikey-canary",
-    "MAILER_DOMAIN": "@infinity-service-mailer-domain-canary",
-    "MAILER_FROM": "@infinity-service-mailer-from-canary",
-    "CORS_ORIGIN": "@infinity-service-cors-origin-canary"
-  }
+  "scope": "bukinoshita",
+  "builds": [{ "src": "dist/**/*.js", "use": "@now/node@canary" }],
+  "routes": [{ "src": "/", "dest": "/dist/api" }]
 }

@@ -6,56 +6,32 @@
   "repository": "infinity-co/infinity-service",
   "author": "Bu Kinoshita <bukinoshita@gmail.com>",
   "license": "MIT",
+  "engines": {
+    "node": "10.x"
+  },
   "scripts": {
-    "start": "node server",
-    "dev": "nodemon server",
-    "test": "cross-env NODE_ENV=test DATABASE=mongodb://localhost:27017/infinity-service-test PORT=4009 mocha './{,!(node_modules)/**/}*.test.js' --timeout=16000  --exit",
+    "build": "tsc",
+    "now-build": "yarn build",
     "lint": "xo --quiet"
   },
   "dependencies": {
-    "bluebird": "^3.5.3",
-    "body-parser": "^1.18.3",
-    "cors": "^2.8.5",
-    "crypto": "^1.0.1",
-    "dotenv": "^8.0.0",
-    "express": "^4.16.4",
-    "express-validator": "^6.0.0",
-    "jsonwebtoken": "^8.5.0",
-    "mailgun-js": "^0.22.0",
-    "mongo-sanitize": "^1.0.1",
-    "mongoose": "^5.4.14",
-    "morgan": "^1.9.1"
+    "body-parser": "1.19.0",
+    "dotenv": "8.0.0",
+    "express": "4.17.1"
   },
   "devDependencies": {
-    "cross-env": "5.2.0",
+    "@types/express": "4.17.0",
     "eslint-config-prettier": "6.0.0",
     "husky": "3.0.2",
     "lint-staged": "9.2.1",
-    "mocha": "6.2.0",
-    "nodemon": "1.19.1",
     "prettier": "1.18.2",
-    "supertest": "4.0.2",
+    "typescript": "3.5.3",
     "xo": "0.24.0"
   },
   "xo": {
     "extends": [
       "prettier"
-    ],
-    "ignores": [
-      "coverage"
-    ],
-    "globals": [
-      "it",
-      "describe",
-      "before",
-      "test",
-      "expect",
-      "beforeEach"
-    ],
-    "rules": {
-      "no-async-promise-executor": 0,
-      "no-use-extend-native/no-use-extend-native": 0
-    }
+    ]
   },
   "lint-staged": {
     "*.js": [
