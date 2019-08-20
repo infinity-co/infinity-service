@@ -1,6 +1,6 @@
 {
   "name": "infinity-service",
-  "alias": "infinity-service",
+  "alias": "infinity-service.infinityapp.co",
   "version": 2,
   "scope": "bukinoshita",
   "builds": [{ "src": "dist/**/*.js", "use": "@now/node@canary" }],
