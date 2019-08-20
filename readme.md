@@ -1,15 +1,6 @@
 # infinity-service
 
-> Infinity service
-
-## Related
-
-- [Infinity](https://github.com/infinity-co/infinity) — Manage your finances with ease
-- [Infinity site](https://github.com/infinity-co/infinity-site) — Manage your finances with ease
-- [Authentication service](https://github.com/infinity-co/authentication-service) — Authentication service for Infinity app
-- [Subscription service](https://github.com/infinity-co/subscription-service) — Subscription service for Infinity app
-- [Infinity mailer](https://github.com/infinity-co/infinity-mailer) — Mailer service for Infinity app
-- [Infinity media](https://github.com/infinity-co/infinity-media) — Infinity media assets
+> infinity service — main infinity api
 
 ## Contributing
 
@@ -21,13 +12,19 @@ $ yarn
 
 ### 02. Create configs
 
-Create a `.env` file at the root of the project. Make sure you follow the [`.env.example`](.env.example) file as a guide.
+```sh
+$ cp .env.example .env
+```
+
+_Follow the [`.env.example`](.env.example) file as a guide._
 
 ### 03. Run project
 
 ```sh
-$ yarn dev
+$ now dev
 ```
+
+_You'll need [`now`](https://zeit.co/download) installed globally_
 
 ### 04. Learn more in the Contributing guide
 

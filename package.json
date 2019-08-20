@@ -1,7 +1,7 @@
 {
   "name": "infinity-service",
   "version": "0.0.0",
-  "description": "Infinity service",
+  "description": "infinity service — main infinity api",
   "main": "server.js",
   "repository": "infinity-co/infinity-service",
   "author": "Bu Kinoshita <bukinoshita@gmail.com>",
